@@ -27,6 +27,10 @@ const navItems = [
     text: 'Home',
     to: '/',
   },
+  {
+    text: 'Tools',
+    to: '/tools',
+  },
   // {
   //   text: 'About',
   //   to: '/about',
@@ -93,7 +97,7 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, marginTop: 1 }}>
         {navItems.map((item) => (
-          <CustomLink {...item} color='black' />
+          <CustomLink {...item} color='black' key={item.to ?? item.href}  />
         ))}
       </Box>
     </Box>
@@ -116,7 +120,7 @@ export default function DrawerAppBar(props: Props) {
 
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
             {navItems.map((item) => (
-              <CustomLink {...item} />
+              <CustomLink key={item.to ?? item.href} {...item} />
             ))}
           </Box>
 
