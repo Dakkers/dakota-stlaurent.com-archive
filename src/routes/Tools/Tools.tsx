@@ -12,6 +12,11 @@ function Tools() {
       to: 'keys',
       title: 'Practicing Keys',
       description: 'This tool will go through all 12 keys (in Western music!) at random – useful for practicing scales and chord shapes without going through the circle of fifths, which may lead to learning via muscle memory.'
+    },
+    {
+      to: 'midi-cleaner',
+      title: 'MIDI Cleaner',
+      description: 'This cleans up MIDI data.'
     }
   ];
 

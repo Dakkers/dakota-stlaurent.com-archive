@@ -8,6 +8,7 @@ import { Root } from './Root';
 import { Home } from './Home';
 import { Tools } from './Tools';
 import { Keys } from './Tools/Keys';
+import { MidiCleaner } from "./Tools/MidiCleaner";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         element: <Keys />,
         path: '/tools/keys'
+      },
+      {
+        element: <MidiCleaner />,
+        path: '/tools/midi-cleaner'
       },
       // {
       //   path: "portfolio",
