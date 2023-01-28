@@ -1,1 +1,1 @@
-export * from './MidiCleaner'
+export * from "./MidiCleaner";

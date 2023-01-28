@@ -1,26 +1,24 @@
-import './index.scss'
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import {
-  RouterProvider,
-} from "react-router-dom";
+import "./index.scss";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { RouterProvider } from "react-router-dom";
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
-import { router } from './routes/router'
-import { ThemeProvider } from './utils/ThemeProvider'
+import { router } from "./routes/router";
+import { ThemeProvider } from "./utils/ThemeProvider";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
 );

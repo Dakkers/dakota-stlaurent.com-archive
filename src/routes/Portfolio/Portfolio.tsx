@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function Portfolio() {
-  return (
-    <div>
-      I'll put stuff here at some point :)
-    </div>
-  );
+  return <div>I'll put stuff here at some point :)</div>;
 }
 
 export { Portfolio };
