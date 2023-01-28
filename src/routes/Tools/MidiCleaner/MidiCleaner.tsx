@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, FormGroup, Grid, Typography } from '@mui/material';
+import { Button, Checkbox, FormGroup, Grid, Typography } from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import React from 'react';
 import { parseMidi, writeMidi } from 'midi-file'
@@ -280,7 +280,6 @@ for (let idx = 0; idx < NUM_ROWS; idx++) {
 }
 
 function downloadFile (filename: string, blob: Blob) {
-  // Create blob link to download
   const url = window.URL.createObjectURL(
     new Blob([blob]),
   );
@@ -314,8 +313,6 @@ export function MidiCleaner() {
           midiEvent.type !== 'controller' ||
           !checkedState[midiEvent.controllerType]
         )
-        console.log(track)
-        console.log(trackFiltered)
         midiResult.tracks[index] = trackFiltered;
       }
 
